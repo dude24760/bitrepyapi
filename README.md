@@ -10,7 +10,7 @@ import bittrex
 
 bittrex.market = "eth" #This is eth by default.
 
-js = get_update() #This returns a list with all the values from the json. Do this to save multiple calls to api for each value.
+js = bittrex.get_update() #This returns a list with all the values from the json. Do this to save multiple calls to api for each value.
 
 high = bittrex.get_value("high", js) #Second argument is optional, just saves a call to the api if you've stored api json already.
 last = bittrex.get_value("last") #Just an example to show that second argument isn't needed.
