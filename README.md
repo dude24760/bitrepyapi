@@ -18,7 +18,7 @@ last = bittrex.get_value("last") #Just an example to show that second argument i
 print("High:" + str(high))
 print("Last:" + str(last))
 
-if (last * 1.5) > high:
-    print("Last is 1.5x larger than the highest in last 24 hrs. Perhaps sell?")
+if last > high:
+    print("Last is larger than the highest in last 24 hrs. Perhaps sell?")
 
 ```
